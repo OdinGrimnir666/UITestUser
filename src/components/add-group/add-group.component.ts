@@ -54,7 +54,7 @@ export class AddGroupComponent {
       },
       error: (error) => {
         console.error(error.toString());
-        this.alert.showAutoCloseError("Ошибка при отправки")
+        this.alert.showAutoCloseError("Помилка")
       }
     });
   }
@@ -64,7 +64,7 @@ export class AddGroupComponent {
     if(this.nameGroup == "")
     {
 
-      this.alert.showAutoCloseError("Ім'я не може бути группа")
+      this.alert.showAutoCloseError("Ім'я не може бути порожнім")
       return false;
     }
     return  true;

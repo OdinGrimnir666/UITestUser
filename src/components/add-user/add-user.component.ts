@@ -62,7 +62,7 @@ export class AddUserComponent implements OnInit {
       },
       error: (error) => {
         console.error(error.toString());
-        this.alert.showAutoCloseError("Ошибка при отправки")
+        this.alert.showAutoCloseError("Помилка")
       }
     });
   }
